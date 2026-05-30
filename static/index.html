@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Boardroom | AI Meeting Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <span class="highlight">Executive</span>Boardroom
+            </div>
+            <div class="tagline">Strategic AI Meeting Simulation</div>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <div class="glass-card">
+                    <h2>Initiate Board Discussion</h2>
+                    <p class="subtitle">Enter a business topic for our hierarchical agents to deliberate.</p>
+                    <input type="text" id="topic-input" placeholder="e.g., Expansion into European Markets">
+                    <button id="start-btn">Start Simulation</button>
+                </div>
+            </section>
+
+            <section id="chat-container" class="chat-display hidden">
+            </section>
+
+            <section id="loading-overlay" class="hidden">
+                <div class="loading-content">
+                    <div class="spinner-large"></div>
+                    <h3>Board members are deliberating...</h3>
+                    <p>Coordinating executive agents for strategic planning.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Executive AI. Powered by CrewAI & FastAPI.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
